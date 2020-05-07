@@ -1,3 +1,9 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
 body{
 	background: #2e3032;
 	background-image: url('assets/bg.png');
@@ -6,7 +12,20 @@ body{
 	background-size: 120%;
 	background-position: left 70%;
 }
-.head{
-	background-color: #27292b;
+
+header{
+	background-color: #39352e;
 	height: 70px;
+}
+
+.footer{
+	background-color: #39352e;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	border-top: 3px solid #84756b;
+	/*border-color: #84756b;
 }
