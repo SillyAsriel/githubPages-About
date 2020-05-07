@@ -9,8 +9,14 @@
 <body>
 	<h1>Cheers Mate</h1>
 	<img src="https://i.pinimg.com/originals/2c/fc/fa/2cfcfabf5f5fe0aa109cbe34aa12df2a.gif">
-	<audio>
-		<source  src="cheers.wav" type="audio/wav">
+	<audio id="cheers">
+		<source  src="cheers.mp3" type="audio/mp3">
+		Your browser does not support mp3 sounds.
 	</audio>
+	<script>
+		var vid = document.getElementById("cheers");
+		vid.autoplay = true;
+		vid.load(); 
+	</script>
 </body>
 </html>
