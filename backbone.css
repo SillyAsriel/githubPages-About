@@ -1,0 +1,12 @@
+body{
+	background: #2e3032;
+	background-image: url('assets/bg.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 120%;
+	background-position: left 70%;
+}
+.head{
+	background-color: #27292b;
+	height: 70px;
+}

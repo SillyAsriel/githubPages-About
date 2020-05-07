@@ -3,20 +3,31 @@
 <head>
 	<title> Lupus arcum</title>
  	<meta charset="utf-8">
- 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="backbone.css">
+ 	<!--<link rel="stylesheet" href="bootstrap.min.css">-->
+ 	<script>
+ 				function onclick_event() { 
+                var vid = document.getElementById("cheers");
+				vid.play();
+            } 
+ 	</script>
 </head>
 
 <body>
-	<h1>Cheers Mate</h1>
-	<img src="https://i.pinimg.com/originals/2c/fc/fa/2cfcfabf5f5fe0aa109cbe34aa12df2a.gif">
-	<audio id="cheers">
+	<div class="head">
+			<header color="#3b3b43" style="text-align:center;" onclick="onclick_event()">Cheers Mate</header>
+	</div>
+
+	<img src="https://i.pinimg.com/originals/2c/fc/fa/2cfcfabf5f5fe0aa109cbe34aa12df2a.gif" onclick="onclick_event()">
+
+	<button onclick = "onclick_event()"> 
+            Click Here 
+    </button>
+
+	<audio id="cheers" preload="auto">
 		<source  src="cheers.mp3" type="audio/mp3">
-		Your browser does not support mp3 sounds.
+		Your browser does not support mp3 memes.
 	</audio>
-	<script>
-		var vid = document.getElementById("cheers");
-		vid.autoplay = true;
-		vid.load(); 
-	</script>
+
 </body>
 </html>
