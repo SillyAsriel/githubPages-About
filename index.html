@@ -4,35 +4,55 @@
 	<title>Lupus arcum</title>
  	<meta charset="utf-8">
  	<link rel="stylesheet" href="backbone.css">
- 	<!--<link rel="stylesheet" href="bootstrap.min.css">-->
+ 	<link rel="icon" href="assets/favicon.ico" type="image/ico">
+ 
  	<script>
- 				function onclick_event() { 	
-                var vid = document.getElementById("cheers");
-				vid.play();
-            } 
+ 		function onclick_event() { 	
+        var vid = document.getElementById("cheers");
+		vid.play();
+        } 
  	</script>
 </head>
 	
 <body>
+	<div class="header">
 	<header>
-	<h1 style="text-align:center;color: #3b3b43">
-		Cheers Mate
-	</h1>
+		<div class="git_link">
+			<a href="https://github.com/SillyAsriel/githubPages-About" target="_blank">
+				<img class="yesjpg" src="assets/yes.jpg">
+			</a>
+		</div>
+		<h1 style="text-align:center;color: #3b3b43">
+			Cheers Mate
+		</h1>
 	</header>
-	<!-- Картинка -->
-	<img src="assets/smugdance.gif" onclick="onclick_event()">
-	<!-- Кнопощка -->
-	<button onclick = "onclick_event()"> 
-            Click Here 
-    </button>
-    <!-- Демоман -->
-	<audio id="cheers" preload="auto">
-		<source  src="cheers.mp3" type="audio/mp3">
-		Your browser does not support mp3 memes.
-	</audio>
-	<!--  -->
-	<div class ="footer">
-		<p>Footer</p>
+	</div>
+
+	<div class="layout">
+		<aside class="soldier">
+			<img src = "assets/soldier2.png">
+		</aside>
+		<div class="logo">
+		</div>
+		<!-- Картинка -->
+		<dev class = "smug">
+			<img src="assets/smugdance.gif" onclick="onclick_event()">
+		</dev>
+		<!-- Кнопощка -->
+		<!--<button onclick = "onclick_event()"> 
+	            Click Here 
+	    </button>-->
+	    <!-- Демоман -->
+		<audio id="cheers" preload="auto">
+			<source  src="assets/cheers.mp3" type="audio/mp3">
+			Your browser does not support mp3 memes.
+		</audio>
+		<!--  -->
+	</dev>
+
+	<div class="footer">
+		<p>Shop</p>
+		<p>Items</p>
 	</div>
 </body>
 </html>
