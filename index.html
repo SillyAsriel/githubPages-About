@@ -5,37 +5,49 @@
  	<meta charset="utf-8">
  	<link rel="stylesheet" href="backbone.css">
  	<link rel="icon" href="assets/favicon.ico" type="image/ico">
- 
  	<script>
  		function onclick_event() { 	
-        var vid = document.getElementById("cheers");
-		vid.play();
+        var snd = document.getElementById("cheers");
+		snd.play();
         } 
  	</script>
 </head>
 	
 <body>
 	<div class="header">
-	<header>
-		<div class="git_link">
+	 <header>
+		<div class="git_link fl">
 			<a href="https://github.com/SillyAsriel/githubPages-About" target="_blank">
-				<img class="yesjpg" src="assets/yes.jpg">
+			<img class="git_ico" src="assets/git.png">
+		</div>
+		
+		<div class="avatar fl">
+			<a href="https://steamcommunity.com/id/SillyAsriel/"target="_blank"> 
+			<img class="yesjpg" src="assets/yes.jpg">
 			</a>
 		</div>
-		<h1 style="text-align:center;color: #3b3b43">
-			Cheers Mate
-		</h1>
-	</header>
+
+		<div class="bigGreenButton fr">
+			<a href="http://www.everydayim.com/" target="_top">
+			<div class="hustle fl">
+				<img src="assets/hustle.png">
+			</div>
+			<div class="everydayim fr">
+				EVERYDAY
+			</div>
+			</a>
+		</div>
+	 </header>
 	</div>
 
 	<div class="layout">
 		<aside class="soldier">
-			<img src = "assets/soldier2.png">
+			<img src="assets/soldier2.png">
 		</aside>
 		<div class="logo">
 		</div>
 		<!-- Картинка -->
-		<dev class = "smug">
+		<dev class="smug fl">
 			<img src="assets/smugdance.gif" onclick="onclick_event()">
 		</dev>
 		<!-- Кнопощка -->
