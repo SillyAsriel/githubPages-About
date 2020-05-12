@@ -16,15 +16,22 @@
 <body>
 	<div class="header">
 	 <header>
+
 		<div class="git_link fl">
 			<a href="https://github.com/SillyAsriel/githubPages-About" target="_blank">
-			<img class="git_ico" src="assets/git.png">
-		</div>
-		
-		<div class="avatar fl">
-			<a href="https://steamcommunity.com/id/SillyAsriel/"target="_blank"> 
-			<img class="yesjpg" src="assets/yes.jpg">
+				<img class="git_ico" src="assets/git.png">
 			</a>
+		</div>
+			
+		<div class="avatar fl">
+			<a href="https://steamcommunity.com/id/SillyAsriel/"target="_blank">
+				<img class="yesjpg" src="assets/yes.jpg">
+			</a>
+		</div>
+
+		<div class="smug fl">
+			<img class="smug" src="assets/smugdance.gif" 
+				onclick="onclick_event()">
 		</div>
 
 		<div class="bigGreenButton fr">
@@ -41,30 +48,41 @@
 	</div>
 
 	<div class="layout">
-		<aside class="soldier">
-			<img src="assets/soldier2.png">
-		</aside>
-		<div class="logo">
+		<div class="featured">
+			<p>Featured</p>
 		</div>
-		<!-- Картинка -->
-		<dev class="smug fl">
-			<img src="assets/smugdance.gif" onclick="onclick_event()">
-		</dev>
-		<!-- Кнопощка -->
-		<!--<button onclick = "onclick_event()"> 
-	            Click Here 
-	    </button>-->
-	    <!-- Демоман -->
-		<audio id="cheers" preload="auto">
-			<source  src="assets/cheers.mp3" type="audio/mp3">
-			Your browser does not support mp3 memes.
-		</audio>
-		<!--  -->
-	</dev>
+
+		<div class="friends">
+			<p>Friends</p>
+		</div>
+
+		<div class="soldier fr">
+			<img src="assets/soldier2.png">
+		</div>
+	</div>
 
 	<div class="footer">
-		<p>Shop</p>
-		<p>Items</p>
+		<a href="about:blank">
+			<div class="button-box fl" style="margin:20px 0 0 175px;">
+					<div class="shop">
+							<p>Shop</p>
+					</div>
+			</div>
+		</a>
+		<a href="about:blank">
+			<div class="button-box fl" style="margin:20px 0 0 56px;">
+				<div class="item">
+					<p>Items</p>
+				</div>
+			</div>
+		</a>
 	</div>
 </body>
+<!-- Audio files that'll be called by events -->
+<div class="sfx">
+	<audio id="cheers" preload="auto">
+		<source  src="assets/cheers.mp3" type="audio/mp3">
+		Your browser does not support mp3 memes.
+	</audio>
+</div>
 </html>

@@ -9,6 +9,12 @@
 	box-sizing: border-box;
 }
 
+p{
+	font-family: "tf2build", sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
 .fl{
 	float:left;
 }
@@ -21,10 +27,9 @@ body{
 	background: #2e3032;
 	background-image: url('assets/bg.png');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: 120%;
-	background-position: right 70%;
-
+	background-position: 100% 0%;
+	background-attachment: fixed;
 }
 
 /*Header*/
@@ -44,22 +49,33 @@ header{
 	width: 74px;
 }
 
+.git_link:hover{
+	background-color: #924738;
+}
+
 .git_ico{
-	position: relative;
 	height:33px;
 	width:33px;
 	margin: 6px 0 0 20px;
 }
 
 .avatar{
-	display: block;
+	width: 42px;
+	height: 42px;
+	margin-left: 1px;
 }
 
 .yesjpg{
-	width: 43px;
-	height: 43px;
+	width: 44px;
+	height: 44px;
 	border: 1px solid #766b5e;
 	border-bottom: 2px solid #7dafff;
+}
+
+.smug{
+	height:45px;
+	width: auto;
+	margin-left: 3px;
 }
 
 .bigGreenButton{
@@ -80,21 +96,29 @@ header{
 }
 
 /*layout*/
-.smug{
-	position: relative;
+.layout{
+	margin-left: 200px;
 }
 
+.featured, .friends{
+	display:inline-block;
+	position: relative;
+	width: 480px;
+	height: auto;
+	background-color: #292526;
+	border-radius: 3px;
+	border: 1px solid #84756b;
+}
 
 .soldier{
-	position: fixed;
-	right: 200px;
+	margin-right: 200px;
 	max-width:100%;
 	max-height:100%;
 }
 
 /*footer*/
 .footer{
-	background-color: #39352e;
+	background-color: #39352e;	
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -102,5 +126,29 @@ header{
 	width: 100%;
 	text-align: center;
 	border-top: 3px solid #84756b;
-	/*border-color: #84756b;
+	/*border-color: #84756b;*/
+}
+
+.button-box{
+	background-color: #766b5e;
+	width: 200px;
+	height: 50px;
+	border-radius: 6%;
+	position: relative;
+	/*text*/
+	font-family: "tf2build", sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
+.button-box:hover{
+	background-color: #924738;
+}
+
+.shop, .item{
+	margin:9px 0 0 0px;
+}
+
+.sfx{
+	display: none;
 }
