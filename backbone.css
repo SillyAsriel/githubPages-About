@@ -9,10 +9,10 @@
 	box-sizing: border-box;
 }
 
-p{
-	font-family: "tf2build", sans-serif;
-	font-size: 24px;
-	color: white;
+h4{
+		font-family: "tf2build", sans-serif;
+		font-size: 24px;
+		color: white;
 }
 
 .fl{
@@ -98,19 +98,63 @@ header{
 /*layout*/
 .layout{
 	margin-left: 200px;
+	width: 480px;
 }
 
-.featured, .friends{
-	display:inline-block;
+.featured, .about{
+	display:block;
 	position: relative;
-	width: 480px;
+	width: inherit;
 	height: auto;
-	background-color: #292526;
+	background-color: #39352e;
 	border-radius: 3px;
 	border: 1px solid #84756b;
+
+}
+
+.ftrd-logo{
+	margin: 10px 0 8px 20px;
+}
+
+.featured-contents{
+	display: solid-block;
+	background-color: #292526;
+	width: auto;
+	height: 140px;
+	position: relative;
+	border-radius: 2px;
+	border-right: 1px solid #84756b;
+	border-bottom: 1px solid #84756b;
+	margin: 4px 4px 8px 4px;
+	-webkit-box-shadow: inset 6px 9px 15px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 6px 9px 15px -1px rgba(0,0,0,0.75);
+	box-shadow: inset 6px 9px 15px -1px rgba(0,0,0,0.75);
+}
+.ftrd-header{
+	font-family: "tf2secondary", sans-serif;
+	font-size: 15px;
+	padding: 4px 0 0 6px;
+	width: 300px;
+}
+
+.ftrd-descr{
+	font-family: "tf2secondary", sans-serif;
+	font-size: 13px;
+	color: gray;
+	margin: 1px 0 0 10px;
+	width: 300px;
+}
+
+.ftrd-image{	
+	height: 120px;
+	width: auto;
+	position: relative;
+	right: 12px;
+    bottom: 30px;
 }
 
 .soldier{
+	position: relative;
 	margin-right: 200px;
 	max-width:100%;
 	max-height:100%;
