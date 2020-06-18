@@ -1,13 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Lupus arcum</title>
+	<title>Tribute to Rick May</title>
  	<meta charset="utf-8">
  	<link rel="stylesheet" href="backbone.css">
  	<link rel="icon" href="assets/favicon.ico" type="image/ico">
  	<script>
  		function onclick_event() { 	
         var snd = document.getElementById("cheers");
+		snd.play();
+        } 
+        function onclick_event2() { 	
+        var snd = document.getElementById("waltz");
 		snd.play();
         } 
  	</script>
@@ -29,9 +33,8 @@
 			</a>
 		</div>
 
-		<div class="smug fl">
-			<img class="smug" src="assets/smugdance.gif" 
-				onclick="onclick_event()">
+		<div class="smug fl" onclick="onclick_event2()">
+				<img class="smug" src="assets/speaker.png">
 		</div>
 
 		<div class="bigGreenButton fr">
@@ -49,20 +52,30 @@
 
 	<div class="layout">
 		<div class="featured">
-			<h4 class="ftrd-logo">Featured</h4>
+			<!-- Rick May's portrait and quote --> 
+			<h4 class="box-name">In loving memory</h4>
 			<div class="featured-contents">
 				<div class="tfcomic">
-					<h4 class="ftrd-header">Tf2 comic #7 is out</h4>
-					<p class="ftrd-descr">-Read the latest comic! Saxton Hale approves</p>
-
-						<a href="http://www.teamfortress.com/comics.php">
-						<img src="assets/comic.png" class="ftrd-image fr"></a>
+				 <!-- im lazy to change class name -->
+					<h4 class="ftrd-header">Rick May(1940-2020)</h4>
+					<p class="ftrd-descr" 
+					onclick="onclick_event()">
+					"This is my world. You are not welcome in my world."</p>
+					<a href="https://en.wikipedia.org/wiki/Rick_May">
+						<img src="assets/rick.jpg" class="ftrd-image fr">
+					</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="about">
-			<h4 class="ftrd-logo">About</h4>
+			<h4 class="box-name">Death</h4>
+			<div class="about-contents">
+				<h4 class="ftrd-header">
+					May suffered a stroke in February 2020 and was moved to a nursing home for rehabilitation. On April 8, 2020, it was reported that May had died due to complications related to COVID-19 at Swedish Medical Center in Seattle.</h4>
+					<h4 class="ftrd-header">
+					On May 1, 2020, Valve released an update to Team Fortress 2 adding a tribute to May's voice work as the Soldier in the form of a new main menu theme titled "Saluting The Fallen" (a rendition of Taps), and locking the character image in the main menu to Soldier. The update also added statues of the Soldier saluting to most of the official in-game maps. These statues all feature a commemorative plaque dedicated to May, and remained in maps until the June 1st. The statues emit a number of pre-selected voice lines from the Soldier when approached. Many Team Fortress 2 fans have released tribute videos on YouTube to tribute May.</h4>
+			</div>
 		</div>
 
 		<div class="soldier fr">
@@ -70,31 +83,34 @@
 		</div>
 	</div>
 
-	<div class="footer">
+	<div class="footer"> <footer>
 		<!-- Why should i <div> that link if im not going to style it further?-->
-		<a href="about:blank">
+		<a href="https://en.wikipedia.org/wiki/Rick_May">
 			<div class="button-box fl" style="margin:20px 0 0 175px;">
-					<div class="shop">
-							<p>Shop</p>
-					</div>
+				<div class="shop">
+					<p>Wiki</p>
+				</div>	
 			</div>
+		</a>
+		<a href="https://wiki.teamfortress.com/wiki/Soldier_responses">
 			<div class="button-box fl" style="margin:20px 0 0 56px;">
 				<div class="item">
-					<p>Items</p>
+					<p>Tf2Wiki</p>
 				</div>
 			</div>
 		</a>
-		<!-- Right sided buttons for something extra -->
-		<div class="button-box fr">
-			
-		</div>
-	</div>
+	</footer></div>
 </body>
 <!-- Audio files that'll be called by events -->
 <div class="sfx">
 	<audio id="cheers" preload="auto">
-		<source  src="assets/cheers.mp3" type="audio/mp3">
+		<source  src="assets/welcome.wav" type="audio/wav">
 		Your browser does not support mp3 memes.
 	</audio>
+	<audio id="waltz" preload="auto">
+		<source  src="assets/waltz.mp3" type="audio/mp3">
+		Your browser does not support mp3 memes.
+	</audio>
+
 </div>
 </html>
